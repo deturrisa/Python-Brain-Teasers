@@ -7,3 +7,20 @@ Create a python program that will take two inputs, first is the price of an item
 The program should return the least change possible to give back to the customer (e.g. 1 ten pound, 1 five pound, 2 two pound coins, 1 twenty pence coin, and 1 five pence coin).
 
 Test 
+
+```sh
+cash_reg(20,19.99)
+cash_reg(20,19.98)
+cash_reg(20,0.75)
+cash_reg(20,0.75)
+cash_reg(20,0.49)
+```
+
+Excpected output 
+```sh
+1 one pence, 
+1 two pence, 
+1 ten pound, 1 five pound, 2 two pound, 1 twenty pence, 1 five pence, 
+1 ten pound, 1 five pound, 2 two pound, 1 twenty pence, 1 five pence, 
+1 ten pound, 1 five pound, 2 two pound, 1 fifty pence, 1 one pence, 
+```
