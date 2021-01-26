@@ -24,3 +24,9 @@ Excpected output
 1 ten pound, 1 five pound, 2 two pound, 1 twenty pence, 1 five pence, 
 1 ten pound, 1 five pound, 2 two pound, 1 fifty pence, 1 one pence, 
 ```
+
+### Classroom interval problem
+
+Given an array of time intervals (start, end) for classroom lectures (possibly overlapping), find the minimum number of rooms required.
+
+For example, given [(30, 75), (0, 50), (60, 150)], you should return 2.
