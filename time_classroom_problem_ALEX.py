@@ -12,7 +12,7 @@ def overlapping(classRoomA, classRoomB):
     return True
 
 
-intervals = [ClassRoom(30, 75), ClassRoom(0, 50), ClassRoom(60, 150)]
+intervals = [ClassRoom(30, 75), ClassRoom(6, 50), ClassRoom(0, 5)]
 rooms_needed = 0
 
 for i in range(len(intervals) - 1):
