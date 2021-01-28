@@ -29,4 +29,21 @@ Excpected output
 
 Given an array of time intervals (start, end) for classroom lectures (possibly overlapping), find the minimum number of rooms required.
 
-For example, given [(30, 75), (0, 50), (60, 150)], you should return 2.
+For example, given ```sh[(30, 75), (0, 50), (60, 150)]```, you should return 2.
+
+### Two Sum Problem
+
+Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
+
+You may assume that each input would have exactly one solution, and you may not use the same element twice.
+
+You can return the answer in any order.
+
+ 
+
+Example:
+```sh
+Input: nums = [2,7,11,15], target = 9
+Output: [0,1]
+Output: Because nums[0] + nums[1] == 9, we return [0, 1].
+```
