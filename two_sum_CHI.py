@@ -15,10 +15,13 @@ def two_sum(numbers, target):
     output = []
     for num in numbers:
         numbers_1 = numbers[:]
+        numbers_1.remove(num)
         for num_1 in numbers_1:
             if len(output) == 0:
                 if num + num_1 == target:
                     if num == num_1:
+                        print(num)
+                        print(num_1)
                         output.append([i for i, n in enumerate(numbers) if n == num][0])
                         output.append([i for i, n in enumerate(numbers) if n == num][1])
                     else:
@@ -37,3 +40,6 @@ two_sum([4,5,4],9)
 two_sum([4,5,15,1,8],16)
 two_sum([5,5,15,1,8],10)
 two_sum([1,2,5,1,5],10)
+two_sum([3,2,4],6)
+
+
