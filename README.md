@@ -136,7 +136,7 @@ Output: 91
 ```sh
 Constraints:
 
-* <= boxTypes.length <= 1000
-* <= numberOfBoxesi, numberOfUnitsPerBoxi <= 1000
-* <= truckSize <= 106
+- <= boxTypes.length <= 1000
+- <= numberOfBoxesi, numberOfUnitsPerBoxi <= 1000
+- <= truckSize <= 106
 ```
