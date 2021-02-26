@@ -1,6 +1,6 @@
 # Solved problems
 
-### Cash register problem
+## Cash register problem
 
 Create a python program that will take two inputs, first is the price of an item (e.g. 0.75GBP) and second is the amount paid by a customer for the item (e.g. 20GBP). 
 
@@ -25,13 +25,13 @@ Excpected output
 1 ten pound, 1 five pound, 2 two pound, 1 fifty pence, 1 one pence, 
 ```
 
-### Classroom interval problem
+## Classroom interval problem
 
 Given an array of time intervals (start, end) for classroom lectures (possibly overlapping), find the minimum number of rooms required.
 
 For example, given ```sh[(30, 75), (0, 50), (60, 150)]```, you should return 2.
 
-### Two Sum Problem
+## Two Sum Problem
 
 Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
 
@@ -48,7 +48,7 @@ Output: [0,1]
 Output: Because nums[0] + nums[1] == 9, we return [0, 1].
 ```
 
-### Roman Numeral to Integer
+## Roman Numeral to Integer
 Given a roman numeral, convert it to an integer.
 ```sh
 Symbol       Value
@@ -64,7 +64,7 @@ I can be placed before V (5) and X (10) to make 4 and 9.
 X can be placed before L (50) and C (100) to make 40 and 90. 
 C can be placed before D (500) and M (1000) to make 400 and 900.
 ```
-### Straight Line 
+## Straight Line 
 
 You are given an array coordinates, ```coordinates[i] = [x, y]```, where ```[x, y]``` represents the coordinate of a point. Check if these points make a straight line in the XY plane.
 E.g
