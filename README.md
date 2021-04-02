@@ -1,6 +1,6 @@
 # Solved problems
 
-### Cash register problem
+## Cash register problem
 
 Create a python program that will take two inputs, first is the price of an item (e.g. 0.75GBP) and second is the amount paid by a customer for the item (e.g. 20GBP). 
 
@@ -25,13 +25,13 @@ Excpected output
 1 ten pound, 1 five pound, 2 two pound, 1 fifty pence, 1 one pence, 
 ```
 
-### Classroom interval problem
+## Classroom interval problem
 
 Given an array of time intervals (start, end) for classroom lectures (possibly overlapping), find the minimum number of rooms required.
 
 For example, given ```sh[(30, 75), (0, 50), (60, 150)]```, you should return 2.
 
-### Two Sum Problem
+## Two Sum Problem
 
 Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
 
@@ -48,7 +48,7 @@ Output: [0,1]
 Output: Because nums[0] + nums[1] == 9, we return [0, 1].
 ```
 
-### Roman Numeral to Integer
+## Roman Numeral to Integer
 Given a roman numeral, convert it to an integer.
 ```sh
 Symbol       Value
@@ -64,7 +64,7 @@ I can be placed before V (5) and X (10) to make 4 and 9.
 X can be placed before L (50) and C (100) to make 40 and 90. 
 C can be placed before D (500) and M (1000) to make 400 and 900.
 ```
-### Straight Line 
+## Straight Line 
 
 You are given an array coordinates, ```coordinates[i] = [x, y]```, where ```[x, y]``` represents the coordinate of a point. Check if these points make a straight line in the XY plane.
 E.g
@@ -139,4 +139,107 @@ Constraints:
 - <= boxTypes.length <= 1000
 - <= numberOfBoxesi, numberOfUnitsPerBoxi <= 1000
 - <= truckSize <= 106
+```
+## 12. Integer to Roman
+Roman numerals are represented by seven different symbols: I, V, X, L, C, D and M.
+
+```sh
+Symbol       Value
+I             1
+V             5
+X             10
+L             50
+C             100
+D             500
+M             1000
+```
+
+For example, 2 is written as II in Roman numeral, just two one's added together. 12 is written as XII, which is simply X + II. The number 27 is written as XXVII, which is XX + V + II.
+
+Roman numerals are usually written largest to smallest from left to right. However, the numeral for four is not IIII. Instead, the number four is written as IV. Because the one is before the five we subtract it making four. The same principle applies to the number nine, which is written as IX. There are six instances where subtraction is used:
+
+I can be placed before V (5) and X (10) to make 4 and 9. 
+X can be placed before L (50) and C (100) to make 40 and 90. 
+C can be placed before D (500) and M (1000) to make 400 and 900.
+Given an integer, convert it to a roman numeral.
+
+```sh
+Example 1:
+
+Input: num = 3
+Output: "III"
+```
+```sh
+Example 2:
+
+Input: num = 4
+Output: "IV"
+```
+```sh
+Example 3:
+
+Input: num = 9
+Output: "IX"
+```
+```sh
+Example 4:
+
+Input: num = 58
+Output: "LVIII"
+Explanation: L = 50, V = 5, III = 3.
+```
+```sh
+Example 5:
+
+Input: num = 1994
+Output: "MCMXCIV"
+Explanation: M = 1000, CM = 900, XC = 90 and IV = 4.
+```
+```sh
+Constraints:
+
+1 <= num <= 3999
+```
+
+## 1672. Richest Customer Wealth
+You are given an m x n integer grid accounts where accounts[i][j] is the amount of money the i​​​​​​​​​​​th​​​​ customer has in the j​​​​​​​​​​​th​​​​ bank. Return the wealth that the richest customer has.
+
+A customer's wealth is the amount of money they have in all their bank accounts. The richest customer is the customer that has the maximum wealth.
+
+```sh
+Example 1:
+
+Input: accounts = [[1,2,3],[3,2,1]]
+Output: 6
+Explanation:
+1st customer has wealth = 1 + 2 + 3 = 6
+2nd customer has wealth = 3 + 2 + 1 = 6
+Both customers are considered the richest with a wealth of 6 each, so return 6.
+```
+
+```sh
+Example 2:
+
+Input: accounts = [[1,5],[7,3],[3,5]]
+Output: 10
+Explanation: 
+1st customer has wealth = 6
+2nd customer has wealth = 10 
+3rd customer has wealth = 8
+The 2nd customer is the richest with a wealth of 10.
+```
+
+```sh
+Example 3:
+
+Input: accounts = [[2,8,7],[7,1,3],[1,9,5]]
+Output: 17
+```
+```sh
+Constraints:
+
+m == accounts.length
+n == accounts[i].length
+1 <= m, n <= 50
+1 <= accounts[i][j] <= 100
 ```
